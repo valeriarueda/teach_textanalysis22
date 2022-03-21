@@ -1,5 +1,7 @@
-# Teaching Text Analysys for Economists
+# Text Analysys for Economists
 **A hands-on introduction using R**
+
+#
 
 These are all the files needed for the graduate workshop on text analysis. Please refer to the syllabus in "docs" for more details.
 
@@ -17,7 +19,7 @@ The data files are in the folder `data`
 | "data/all_ECB_speeches_20112022.csv" | Raw| ECB speeches from 2011 (since Mario Draghi's time) |
 | "data/Loughran-McDonald_MasterDictionary_1993-2021.csv"  | Raw | Lougran and MacDocnald (2011) sentiment lexicon to be used with financial docs. Also available as an R package (lexicon_loughran in [textdata  library](https://emilhvitfeldt.github.io/textdata/index.html)) |
 | "data/Loughran-McDonald_simplified.csv" | Raw | Lougran and MacDocnald (2011) sentiment lexicon simplified (with stems), for the purpose of this class only. It may be better to not use stemmed terms for sentiment analysis. |
-| "data/open_pubs_2020-07_forclass.csv" | Raw | Description|
+| "data/open_pubs_2020-07_forclass.csv" | Raw | UK pub names and addressed, modified for the purpose of the class. Used to learn regular expressions.  [Original here](https://www.getthedata.com/open-pubs). |
 | "data/output/speech_tfidf_20112022_wide.csv" | Output| TF-IDF matrix representation of ECB speeches since 2011. Wide format (one line per speech)|
 |"data/output/speech_tfidf_20112022.csv" | Output|   TF-IDF matrix representation of ECB speeches since 2011. Long format (one line per stem $\times$ speech)|
 
@@ -26,7 +28,7 @@ For this class, you need to have a working installation of R. To work with R, th
 
 Make sure you have tested your version of R and basic commands, such as read.csv(), are running before the lecture. [This video](https://youtu.be/Eq8Xnueb-50) presents a tutorial on how to do load a dataset in R.
 
-The following packages should be installed: `tidyverse, ggmap, sf, tidytext, stopwords, SnowBallC, glmnet, gamlr`.
+The following packages should be installed: `tidyverse`, `ggmap`, `sf`, `tidytext`, `stopwords`, `SnowBallC`, `glmnet`, `gamlr`, `ranger`.
 
 To install a package, run the command: `install.package(“package”)`. For instance: `install.package(“tidyverse”)`.
 
