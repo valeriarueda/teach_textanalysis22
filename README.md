@@ -1,9 +1,9 @@
 # Teaching Text Analysys for Economists
-## A hands-on introduction using R
+**A hands-on introduction using R**
 
-These are all the files needed for Valeria's text analysis class. Please refer to the syllabus in "docs" for more details.
+These are all the files needed for the graduate workshop on text analysis. Please refer to the syllabus in "docs" for more details.
 
-## Lecture materials
+## Lecture Materials
 
 To read the lecture notes, open the link [notebook/MasterClass.ipynb](https://github.com/valeriarueda/teach_textanalysis22/blob/main/notebook/MasterClass.ipynb).
 
@@ -20,3 +20,31 @@ The data files are in the folder `data`
 | "data/open_pubs_2020-07_forclass.csv" | Raw | Description|
 | "data/output/speech_tfidf_20112022_wide.csv" | Output| TF-IDF matrix representation of ECB speeches since 2011. Wide format (one line per speech)|
 |"data/output/speech_tfidf_20112022.csv" | Output|   TF-IDF matrix representation of ECB speeches since 2011. Long format (one line per stem $\times$ speech)|
+
+## Materials
+For this class, you need to have a working installation of R. To work with R, the IDEs RStudio or Jupyter will be useful. RStudio may be the easiest to sort out.
+
+Make sure you have tested your version of R and basic commands, such as read.csv(), are running before the lecture. [This video](https://youtu.be/Eq8Xnueb-50) presents a tutorial on how to do load a dataset in R.
+
+The following packages should be installed: `tidyverse, ggmap, sf, tidytext, stopwords, SnowBallC, glmnet, gamlr`.
+
+To install a package, run the command: `install.package(“package”)`. For instance: `install.package(“tidyverse”)`.
+
+In other words, the following header should run in your machine:
+
+```
+library(tidyverse)
+#Maps
+library(ggmap)
+library(sf)
+sf::sf_use_s2(FALSE) ## s2 in sf version 1.0 slows down the code too
+much
+#Text analysis
+library(tidytext)
+library(stopwords)
+library(SnowballC)
+# ML
+library(ranger) #Random Forests
+library(glmnet) #LASSO
+library(gamlr) #LASSO choice lambda AIC
+```
