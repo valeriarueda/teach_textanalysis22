@@ -3,7 +3,7 @@
 
 These are all the files needed for Valeria's text analysis class. Please refer to the syllabus in "docs" for more details.
 
-##Lecture materials
+## Lecture materials
 
 To read the lecture notes, open the link [notebook/MasterClass.ipynb](https://github.com/valeriarueda/teach_textanalysis22/blob/main/notebook/MasterClass.ipynb).
 
