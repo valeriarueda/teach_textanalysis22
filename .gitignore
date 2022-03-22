@@ -1,5 +1,4 @@
 notebook/Notebook_toprepclass.ipynb
 LDA*
 *.*.docx
-data/glove.6B
-
+data/glove*/
