@@ -1,4 +1,4 @@
-# Text Analysys for Economists
+# Text Analysis for Economists
 **A hands-on introduction using R**
 
 #
